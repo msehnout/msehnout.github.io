@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My website without any content</title>
+    <link>http://msehnout.github.io/</link>
+    <description>Recent content on My website without any content</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 29 Jun 2016 11:04:15 +0200</lastBuildDate>
+    <atom:link href="http://msehnout.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>first content</title>
+      <link>http://msehnout.github.io/test-section/first-content/</link>
+      <pubDate>Wed, 29 Jun 2016 11:04:15 +0200</pubDate>
+      
+      <guid>http://msehnout.github.io/test-section/first-content/</guid>
+      <description>
+
+&lt;p&gt;ok, let&amp;rsquo;s try &lt;strong&gt;some&lt;/strong&gt; &lt;em&gt;code&lt;/em&gt;:&lt;/p&gt;
+
+&lt;h3 id=&#34;haskell&#34;&gt;Haskell:&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-haskell&#34;&gt;main = do
+    forM_ [7, 42] $ \i -&amp;gt; do
+        case f1 i of
+            Left error -&amp;gt; putStrLn $ &amp;quot;f1 failed: &amp;quot; ++ error
+            Right value -&amp;gt; putStrLn $ &amp;quot;f1 worked: &amp;quot; ++ show value
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;rust&#34;&gt;Rust:&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;// This code is editable and runnable!
+fn main() {
+    // A simple integer calculator:
+    // `+` or `-` means add or subtract by 1
+    // `*` or `/` means multiply or divide by 2
+
+    let program = &amp;quot;+ + * - /&amp;quot;;
+    let mut accumulator = 0;
+
+    for token in program.chars() {
+        match token {
+            &#39;+&#39; =&amp;gt; accumulator += 1,
+            &#39;-&#39; =&amp;gt; accumulator -= 1,
+            &#39;*&#39; =&amp;gt; accumulator *= 2,
+            &#39;/&#39; =&amp;gt; accumulator /= 2,
+            _ =&amp;gt; { /* ignore everything else */ }
+        }
+    }
+
+    println!(&amp;quot;The program \&amp;quot;{}\&amp;quot; calculates the value {}&amp;quot;,
+              program, accumulator);
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;First Header&lt;/th&gt;
+&lt;th&gt;Second Header&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Content from cell 1&lt;/td&gt;
+&lt;td&gt;Content from cell 2&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Content in the first column&lt;/td&gt;
+&lt;td&gt;Content in the second column&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;ul&gt;
+&lt;li&gt;[x] @mentions, #refs, [links](), &lt;strong&gt;formatting&lt;/strong&gt;, and &lt;del&gt;tags&lt;/del&gt; supported&lt;/li&gt;
+&lt;li&gt;[x] list syntax required (any unordered or ordered list supported)&lt;/li&gt;
+&lt;li&gt;[x] this is a complete item&lt;/li&gt;
+&lt;li&gt;[ ] this is an incomplete item&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
