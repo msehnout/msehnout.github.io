@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>My website without any content</title>
-    <link>http://msehnout.github.io/</link>
+    <link>/</link>
     <description>Recent content on My website without any content</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 29 Jun 2016 11:04:15 +0200</lastBuildDate>
-    <atom:link href="http://msehnout.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>first content</title>
-      <link>http://msehnout.github.io/test-section/first-content/</link>
+      <link>/test-section/first-content/</link>
       <pubDate>Wed, 29 Jun 2016 11:04:15 +0200</pubDate>
       
-      <guid>http://msehnout.github.io/test-section/first-content/</guid>
+      <guid>/test-section/first-content/</guid>
       <description>
 
 &lt;p&gt;ok, let&amp;rsquo;s try &lt;strong&gt;some&lt;/strong&gt; &lt;em&gt;code&lt;/em&gt;:&lt;/p&gt;
