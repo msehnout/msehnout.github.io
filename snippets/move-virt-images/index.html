@@ -1,0 +1,188 @@
+    <!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="name">
+		<meta name="description" content="desc">
+		<meta name="generator" content="Hugo 0.17-DEV" />
+		<title>How to move libvirt images into /home directory &middot; Nějaký kusy informací</title>
+		<link rel="shortcut icon" href="/images/favicon.ico">
+		<link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" href="/css/highlight.css">
+		
+
+		
+		<link rel="stylesheet" href="/css/monosocialiconsfont.css">
+		
+
+		
+	</head>
+
+    <body>
+       <nav class="main-nav">
+	
+	
+		<a href='/'> <span class="arrow">←</span>Home</a>
+	
+
+	
+		<a href='/about'>About</a>
+	
+
+	
+</nav>
+
+        <section id="wrapper">
+            <article class="post">
+                <header>
+                    <h1>How to move libvirt images into /home directory</h1>
+                    <h2 class="headline">
+                    August 29, 2016 
+                    <br>
+                    
+                    </h2>
+                </header>
+                <section id="post-body">
+                    
+
+<h2 id="objectives">Objectives</h2>
+
+<p>Do not waste space in / partition, because it&rsquo;s usually too small.</p>
+
+<h2 id="step-by-step-solution">Step by step solution</h2>
+
+<ul>
+<li>Create new directory /home/dir and move images
+
+<ul>
+<li><code># mv /var/lib/libvirt/images/* /home/dir/</code></li>
+</ul></li>
+<li>Set SElinux context for files in this directory
+
+<ul>
+<li>Check the context of libvirt directory: <code>semanage fcontext -l | grep virt_image</code></li>
+<li>Use the same for the new directory: <code>semanage fcontext -a -t virt_image_t &quot;/home/virtstorage(/.*)?&quot;</code></li>
+<li><code>restorecon -R /home/virtstorage/</code></li>
+</ul></li>
+<li>Add alternative storage pool
+
+<ul>
+<li><code>virsh pool-dumpxml default &gt; pool.xml</code></li>
+<li>Change name, delete uuid (but leave tags there) and change the path</li>
+<li><code>virsh pool-create pool.xml</code></li>
+<li><code>virsh pool-refresh name</code></li>
+</ul></li>
+</ul>
+
+<p>Example:</p>
+
+<pre><code class="language-xml">&lt;pool type='dir'&gt;
+    &lt;name&gt;newname&lt;/name&gt;
+    &lt;uuid&gt;&lt;/uuid&gt;
+    &lt;capacity unit='bytes'&gt;1234&lt;/capacity&gt;
+    &lt;allocation unit='bytes'&gt;1234&lt;/allocation&gt;
+    &lt;available unit='bytes'&gt;1234&lt;/available&gt;
+    &lt;source&gt;
+    &lt;/source&gt;
+    &lt;target&gt;
+        &lt;path&gt;/home/dir&lt;/path&gt;
+    &lt;/target&gt;
+&lt;/pool&gt;
+</code></pre>
+
+                </section>
+            </article>
+            <footer id="post-meta" class="clearfix">
+                
+                        <img class="avatar" src="/images/avatar.png">
+                        <div>
+                            <span class="dark">name</span>
+                            <span>...</span>
+                        </div>
+                    
+                <section id="sharing">
+                    <a class="twitter" href="https://twitter.com/intent/tweet?text=%2fsnippets%2fmove-virt-images%2f - How%20to%20move%20libvirt%20images%20into%20%2fhome%20directory "><span class="icon-twitter"> Tweet</span></a>
+
+<a class="facebook" href="#" onclick="
+    window.open(
+      'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
+      'facebook-share-dialog',
+      'width=626,height=436');
+    return false;"><span class="icon-facebook-rect"> Share</span>
+</a>
+
+                </section>
+            </footer>
+
+            
+
+            <ul id="post-list" class="archive readmore">
+    <h3>Read more</h3>
+    
+    
+        
+        <li>
+            <a href="/content/snippets/rust_plus_tito/">Vytvoření RPM balíku přímo z Cargo projektu<aside class="dates">Nov 17</aside></a>
+        </li>
+        
+   
+    
+        
+        <li>
+            <a href="/about/">About<aside class="dates">Aug 29</aside></a>
+        </li>
+        
+   
+    
+        
+        <li>
+            <a href="/snippets/vsftpd-over-tls/">FTP over TLS with vsftpd<aside class="dates">Aug 29</aside></a>
+        </li>
+        
+   
+    
+        
+        <li>
+            <a href="/snippets/move-virt-images/">How to move libvirt images into /home directory<aside class="dates">Aug 29</aside></a>
+        </li>
+        
+   
+</ul>
+            <footer id="footer">
+    
+        <div id="social">
+
+	
+	
+    
+    <a class="symbol" href="https://www.github.com/msehnout/">
+        circlegithub
+    </a>
+    
+
+
+</div>
+
+    
+    <p class="small">
+    
+        © Copyright 2016 name
+    
+    </p>
+</footer>
+
+        </section>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/highlight.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+    </body>
+</html>
