@@ -1,12 +1,16 @@
 #!/bin/bash
 
-#for reka in $(cat reky)
 while read -r reka
 do
     NAZEV=$(echo "${reka}" | sed 's|.*\.cz/\w*/||' | sed 's|\.aspx.*||')
     ZEME=$(echo "${reka}" | sed 's|.*\.cz/||' | sed 's|/.*\.aspx.*||')
     echo "Stahuju ${reka} - ${NAZEV} (${ZEME})"
     curl "${reka}&kilo=kilom&kfoto=1&symbol=1" -o "${NAZEV}"
+    # Oklika pokud doslo k chybe, tak to zkusime bez fotek
+    if grep 'Chybove hlaseni' "${NAZEV}" &> /dev/null
+    then
+        curl "${reka}&kilo=kilom&symbol=1" -o "${NAZEV}"
+    fi
     # Vytvor hlavicku
     cat > "${NAZEV}.html" << EOF
 <head>
