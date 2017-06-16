@@ -1,5 +1,7 @@
 #!/usr/bin/fish
 
+cat top.html style.css body.html > index.html
+
 # Generate kayaking notes
 pushd kajak
 

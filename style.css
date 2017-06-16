@@ -1,8 +1,3 @@
- <!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Title of the document</title>
 <link href="https://fonts.googleapis.com/css?family=Lora|Source+Code+Pro" rel="stylesheet"> 
 <style type="text/css">
     @import url("github.css");
@@ -24,19 +19,3 @@
         }
     }
 </style>
-</head>
-
-<body>
-<header>sehny.cz - sekce kajak</header>
-
-<h1 id="mel">Mel</h1>
-<p>Nasedačka pod jezem Pěkná, ale lehčí řeka</p>
-<h2 id="log">Log</h2>
-<ul>
-<li>Stav: TODO</li>
-<li>Jak to šlo: Málo vody</li>
-</ul>
-
-</body>
-
-</html> 
