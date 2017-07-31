@@ -1,9 +1,9 @@
-# Mel
+# Möll
 
 Nasedačka pod jezem
 Pěkná, ale lehčí řeka
 
 ## Log
 
-* Stav: TODO
+* Stav: Puschall <120cm> Winklern
 * Jak to šlo: Málo vody

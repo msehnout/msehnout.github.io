@@ -4,5 +4,5 @@ Nuda, průplach, nejezdit
 
 ## Log
 
-* Stav: TODO
+* Stav: Kiens <190cm pod prvním mostem v Kiens> vzdutí Mühlbach u zříceniny Chiusa di Rio Pusteria
 * Jak to šlo: 
