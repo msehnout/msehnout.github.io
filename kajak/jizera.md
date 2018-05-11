@@ -24,3 +24,6 @@ Opět všichni 3
 2nd run double fun
 Ostrov v klidu
 Na válce na konci trochu zapomínáme, první dobry, druhý jede jirka hlavou po dně
+
+## Log:
+ * 4/2018 - 20m3 fajn
