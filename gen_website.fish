@@ -10,7 +10,11 @@ echo "<ul>" >> index.html
 
 for SRC in *.md
     set RIVER (echo "$SRC" | sed 's|\.md$||')
-    set RIVERNAME (head --lines=1 "$SRC" | cut -c 3-)
+    if test -e /etc/os-release # Running on Linux
+        set RIVERNAME (head --lines=1 "$SRC" | cut -c 3-)
+    else # Running on macOS
+        set RIVERNAME (head -n 1 "$SRC" | cut -c 3-)
+    end
     echo "Running loop for $RIVERNAME"
     echo "   <li><a href=\"$RIVER.html\">$RIVERNAME</a></li>" >> index.html
     cat top.html > "$RIVER.html"
