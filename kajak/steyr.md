@@ -2,6 +2,15 @@
 
 ta řeka, která začíná pod vodopádem, pokračuje jezem se skluzavkou, místem mezi skalama pod dřevěným mostkem a autobusem
 
+## Za 135cm
+
+Stav 135 cm na sedačka standardně pod vodopádem, holky pod mostem. Jako první věc, která je dobrá nést přenést je ten široký yes se skluzavkou. Většina skupin ho sice jela, ale voda okolo skluzavky tekla hodně, takže spousta z nich padala okolo okolo. Další těžší věc je peřej v úzké soutěsce pod mostkem pěším, za tohoto stavu už voda pod peřejí táhne hodně dolů a následují dva velké válce přes celou řeku, které bez problému zastaví kajakáře. Ideální je prohlédnout dopředu a některé nechat přinést. Další věc jsou žebroví té skály po dalším pěší mostem, za této vody tam nebyl žádný problém, naopak vlevo uprostřed peřeje je hezký vracáku. Hned za touto peřejí následuje autobus, ten taky není nijak záludný, ale dobrý na koukat, aby za ním nic nebylo. Potom už je to dobrý, jen 1 yes, Ale na něm taky nebyl žádný problém.
+
+Celkově je za tohoto stavu krásná řeka, jenom pozor, že po stranách není moc vracáku.
+
+Osobní poznámka: neplést s Erlauf M, pravotočivá zatáčka. S válcem na konci je právě tam, ne tady.
+
 ## Log:
  * 12m3s-1 - nízký
  * 2.5-3h
+ * 2023 - 135cm supr, konečně to nebyla šutrovačka

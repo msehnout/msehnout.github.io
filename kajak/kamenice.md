@@ -16,3 +16,6 @@
 ### Log
  * 12m3 - fajn
  * 8.3m3 ~ 55 cm - trochu drhne, ale na rozježdění krásné
+ * 2023/03 - 11.5 m3 - Soutěska z prava doleva se vyplatila viz foto
+
+![](img/kamenice-navarovska-souteska.jpg)

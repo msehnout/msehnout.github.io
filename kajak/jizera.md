@@ -27,3 +27,4 @@ Na válce na konci trochu zapomínáme, první dobry, druhý jede jirka hlavou p
 
 ## Log:
  * 4/2018 - 20m3 fajn
+ * 3/2023 - 22m3 - Zapomel jsem o kolik je vetsi nez kamenice. Fakt supr takovy cesky lieser
